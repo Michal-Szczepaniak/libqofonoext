@@ -56,7 +56,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{_libdir}/%{name}.so.*
+%{_libdir}/%{name}.a
 
 %files declarative
 %defattr(-,root,root,-)
@@ -64,6 +64,6 @@ rm -rf %{buildroot}
 
 %files devel
 %defattr(-,root,root,-)
-%{_libdir}/%{name}.so
+%{_libdir}/%{name}.a
 %{_libdir}/pkgconfig/qofonoext.pc
 %{_includedir}/qofonoext/*.h

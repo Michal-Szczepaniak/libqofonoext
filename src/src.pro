@@ -1,7 +1,5 @@
 TARGET = qofonoext
-CONFIG += create_pc create_prl no_install_prl link_pkgconfig
-PKGCONFIG += qofono-qt5
-
+CONFIG += create_pc create_prl no_install_prl static
 QT += dbus
 QT -= gui
 QMAKE_CXXFLAGS += -Wno-unused-parameter -Wno-psabi
@@ -23,17 +21,11 @@ OTHER_FILES += \
 SOURCES += \
     qofonoext.cpp \
     qofonoextcell.cpp \
-    qofonoextcellinfo.cpp \
-    qofonoextcellwatcher.cpp \
-    qofonoextmodemmanager.cpp \
-    qofonoextsiminfo.cpp
+    qofonoextmodemmanager.cpp
 
 PUBLIC_HEADERS += \
     qofonoextcell.h \
-    qofonoextcellinfo.h \
-    qofonoextcellwatcher.h \
     qofonoextmodemmanager.h \
-    qofonoextsiminfo.h \
     qofonoext_types.h
 
 HEADERS += \
